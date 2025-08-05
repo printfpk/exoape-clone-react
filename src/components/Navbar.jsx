@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+import { Power4 } from "gsap/all";
 import React from "react";
 import { IoMenuOutline } from "react-icons/io5";
 
@@ -5,7 +7,7 @@ function Navbar() {
   return (
     <div className="w-full fixed z-[999]">
       <div className=" max-w-screen-2xl mx-auto px-5 py-5 sm:py-10 sm:px-10 flex items-center justify-between text-white">
-        <div className="logo">
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} viewport={{ once: true }} transition={{ ease: Power4.easeInOut, duration: 0.7 }} className="logo">
           <svg
             viewBox="0 0 95 25"
             fill="none"
@@ -44,17 +46,20 @@ function Navbar() {
               data-v-1932cced=""
             ></path>
           </svg>
-        </div>
-        <span className="md:hidden">
+        </motion.div>
+        <motion.span
+        initial={{ opacity: 0 }} animate={{ opacity: 1 }} viewport={{ once: true }} transition={{ ease: Power4.easeInOut, duration: 0.7 }} 
+         className="sm:hidden">
           <IoMenuOutline />
-        </span>
-        <div className="links hidden sm:flex gap-10">
+        </motion.span>
+        <motion.div 
+        initial={{ opacity: 0 }} animate={{ opacity: 1 }} viewport={{ once: true }} transition={{ ease: Power4.easeInOut, duration: 0.7 }}  className="links hidden sm:flex gap-10">
           {["Home", "About", "pricing", "Contact"].map((item, index) => (
             <a key={index} className="text-xs font-light font-['TWK_Lausanne']">
               {item}
             </a>
           ))}
-        </div>
+        </motion.div>
       </div>
     </div>
   );
