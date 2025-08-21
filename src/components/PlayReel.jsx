@@ -41,7 +41,7 @@ function PlayReel() {
   });
   return (
     <div ref={parent} className='w-full h-screen overflow-hidden relative bg-black'>
-        <div ref={videodiv} className='w-40 sm:w-96 aspect-video overflow-hidden bg-amber-400 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
+        <div ref={videodiv} className='w-40 sm:w-96 aspect-video overflow-hidden absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
         <video muted autoPlay loop className='w-full h-full scale-[1.2] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2' src="https://player.vimeo.com/progressive_redirect/playback/914803778/rendition/1080p/file.mp4?loc=external&log_user=0&signature=5344c0e4fea63ca54bb433621ca0be7b9470b475583fa68b26de2b6e380a390a"></video></div>
         <div className='overlay absolute w-full h-full  text-white flex flex-col justify-between py-20'>
             <div className='w-full flex items-center justify-center gap-3 '>
