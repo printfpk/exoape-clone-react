@@ -28,7 +28,7 @@ function Spread() {
           </motion.span></h1>
 
             })}
-            <p className='w-2/3 sm:w-1/3 mx-auto mt-5 sm:text-xl sm:mt-10 text-md leading-2'>Find out more about our work on these leading design and technology platforms.</p>
+            <p className='w-2/3 sm:w-1/3 mx-auto mt-4 sm:text-xl sm:mt-10 text-md leading-4'>Find out more about our work on these leading design and technology platforms.</p>
             <a className='border-b-[1px] border-zinc-900 pb-1c mt-5 inline-block' href="#">browse all news</a>
           </div>
         </div>

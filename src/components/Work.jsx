@@ -71,7 +71,7 @@ function Work() {
             Work
           </motion.span>
         </h1>
-        <p className="leading-2 text-md">
+        <p className="leading-none text-md">
           Highlights of cases that we passionately built with forward-thinking
           clients and friends over the years.
         </p>

@@ -42,17 +42,17 @@ function Landing() {
               );
             })}
           </div>
-          <div className="headings mt-5 sm:mt-10">
+          <div className="headings mt-5 sm:mt-10 lg:mt-30">
             {["Digital", "Design", "Experience"].map((item, index) => {
               return (
-                <p key={index} className="text-7xl tracking-tighter py-5 -mt-20 leading-none font-light sm:text-[19rem] overflow-hidden">
+                <p key={index} className="text-7xl sm:text-7xl tracking-tighter py-8 sm:py-5 -mt-4 sm:-mt-20 leading-none font-light sm:text-[17rem] overflow-hidden">
                   <motion.span
                     initial={{ rotate: 90, y: "100%", opacity: 0 }}
                     animate={{ rotate: 0, y: 0, opacity: 1 }}
                     transition={{
                       ease: [0.22, 1, 0.36, 1],
                       duration: 0.8,
-                      delay: 1 + index * 0.2,
+                      delay: 1 + index * 0.6,
                     }}
                     className="inline-block origin-left"
                   >
@@ -62,7 +62,7 @@ function Landing() {
               );
             })}
           </div>
-          <div className="sm:w-1/3 para2 mt-10 sm:mt-20">
+          <div className="sm:w-1/3 para2 mt-15 sm:mt-20">
             <p className="sm:text-xl">
               We help experience-driven companies thrive by making their
               audience feel the refined intricacies of their brand and product
